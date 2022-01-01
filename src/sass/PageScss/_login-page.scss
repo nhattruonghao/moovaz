@@ -1,0 +1,175 @@
+.login-page{
+    background-color: $login-bg-color;
+    padding-top: 50px;
+    &__wrap{
+        @include flex(center, center);
+        flex-direction: column;
+        &__logo{
+            img{
+                width: 130px;
+                cursor: pointer;
+            }
+        }
+        &__title{
+            margin-top: 25px;
+            margin-bottom: 14px;
+            text-align: center;
+            padding: 0 30px;
+            h3{
+                color: $text-main-color;
+                font-size: 36px;
+                font-weight: 400;
+            }
+        }
+        &__subtitle{
+            max-width: 850px;
+            padding: 0 30px;
+            p{
+                color: $text-main-color;
+                font-weight: 300;
+                font-size: 18px;
+                text-align: center;
+                line-height: 1.6;
+            }
+        }
+        &__container{
+            @include flex(center, center);
+            margin: 60px auto;
+            padding: 0 20px;
+            max-width: 1200px;
+            @include tablet{
+                flex-direction: column-reverse;
+            }
+            &__left{
+                display: grid;
+                grid-template-columns: 105px 350px;
+                grid-auto-rows: auto;
+                grid-gap: 30px;
+                justify-items: center;
+                align-items: center;
+                .text-wrap{
+                    p{
+                        color: $text-main-color;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 4px;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 1.6;
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &__right{
+                @include tablet{
+                    margin-bottom: 32px;
+                }
+                .login-form{
+                    margin-left: 60px;
+                    @include tablet{
+                        margin-left: 0px;
+                    }
+                    width: 360px;
+                    background-color: white;
+                    padding: 30px;
+                    border-radius: 5px;
+                    &__title{
+                        h1{
+                            color: $text-main-color;
+                            font-weight: 500;
+                            font-size: 24px;
+                        }
+                    }
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    &__input{
+                        margin-top: 22px;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        label{
+                            margin-bottom: 9px;
+                            font-size: 14px;
+                            color: $text-main-color;
+                            opacity: 0.9;
+                        }
+                        input{
+                            border: none;
+                            border-radius: 4px;
+                            padding: 15px 35px 15px 16px;
+                            outline: none;
+                            width: 100%;
+                            overflow: hidden;
+                            height: 52px;
+                            color: $text-main-color;
+                            border: 1px solid $text-second-color;
+                        }
+                        .eye-flash-icon{
+                            position: absolute;
+                            right: 10px;
+                            top: 44px;
+                            cursor: pointer;
+                            img{
+                                width: 16px;
+                            }
+                        }
+                    }
+                    &__msg{
+                        padding-top: 12px;
+                        span{
+                            font-size: 13px;
+                            font-weight: 500;
+                            color: $red-color;
+                        }
+                    }
+                    &__forgot-password{
+                        margin-top: 12px;
+                        span{
+                            cursor: pointer;
+                            font-size: 14px;
+                            font-weight: 600;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            color: #e89cae;
+                            text-decoration: none;
+                        }
+                    }
+                    &__button{
+                        @include flex(flex-end, flex-end);
+                        button{
+                            cursor: not-allowed;
+                            margin-left: auto;
+                            margin-top: 29px;
+                            width: 145px;
+                            border: none;
+                            cursor: pointer;
+                            outline: none;
+                            height: 46px;
+                            border-radius: 23px;
+                            background-color: $pink-color;
+                            // background-color: #e89cae;
+                            font-family: HankenGrotesk;
+                            font-size: 16px;
+                            font-weight: 700;
+                            text-align: center;
+                            color: #fff;
+                            &:disabled{
+                                background-color: $text-second-color;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

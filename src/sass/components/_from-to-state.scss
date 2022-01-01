@@ -1,0 +1,89 @@
+.fromto{
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    @include flex(center, center);
+    @include tablet{
+        height: 120px;
+    }
+    @include mobile{
+        height: 100px;
+    }
+    &__img{
+        height: 100%;
+        position: absolute;
+        img{
+        }
+    }
+    .container{
+        @include flex (center, center);
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .progressline{
+        @include flex (center, center);
+        flex-direction: column;
+        width: 800px;
+        position: absolute;
+        @include tablet{
+            width: 500px;
+        }
+        @include mobile{
+            width: 350px;
+        }
+        .line{
+            width: 100%;
+            border-top: 2px dashed white;
+            position: relative;
+            .logo-circle{
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                @include flex(center, center);
+                img{
+                    width: 50px;
+                }
+            }
+            .dot-wrap-first{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%) translateX(-50%);
+            }
+            .dot-wrap-last{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%) translateX(50%);
+            }
+        }
+        .bottom-line{
+            width: 100%;
+            margin-top: 18px;
+            @include flex(center, space-between);
+            position: absolute;
+            top: 8px;
+            .location{
+                &:first-child{
+                    transform: translateX(-50%);
+                }
+                &:last-child{
+                    transform: translateX(50%);
+                }
+                span{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+}

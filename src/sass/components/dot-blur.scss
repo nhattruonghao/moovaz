@@ -1,0 +1,25 @@
+.dotblur{
+    position: relative;
+    .dotblur1{
+        width: 37px;
+        height: 37px;
+        background-color: rgba(235,85,120, 0.3);
+        border-radius: 50%;
+        @include flex (center, center);
+    }
+    .dotblur2{
+        width: 25px;
+        height: 25px;
+        background-color: rgba(235,85,120, 0.5);
+        border-radius: 50%;
+        @include flex(center, center);
+
+    }
+    .dotblur3{
+        width: 14px;
+        height: 14px;
+        background-color: rgb(235,85,120);
+        border-radius: 50%;
+    }
+}
+

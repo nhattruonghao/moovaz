@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <path id="ik14vegt1a" d="M2 14L14 2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <circle cx="8" cy="8" r="2" fill="#000"/>
+            <path stroke="#000" stroke-linejoin="round" stroke-width="2" d="M8 13c2.577 0 4.91-1.667 7-5-2.09-3.333-4.423-5-7-5S3.09 4.667 1 8c2.09 3.333 4.423 5 7 5z"/>
+            <g stroke-linecap="round" stroke-linejoin="round">
+                <use stroke="#FFF" stroke-width="4" xlink:href="#ik14vegt1a"/>
+                <use stroke="#000" stroke-width="2" xlink:href="#ik14vegt1a"/>
+            </g>
+        </g>
+    </g>
+</svg>
