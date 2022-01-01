@@ -8,7 +8,7 @@ import ModalMoveDate from "../../Components/ModalMoveDate";
 
 function Home() {
   return (
-    <div className="main" style={{backgroundColor: '#f4f4f4'}}>
+    <div className="main" style={{backgroundColor: '#f4f4f4', overflow: 'hidden'}}>
       <Header />
       <BreadCrumb />
       <FromToState />
