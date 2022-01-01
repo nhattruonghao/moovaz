@@ -39,6 +39,11 @@
             max-width: 1200px;
             @include tablet{
                 flex-direction: column-reverse;
+                padding: 0;
+            }
+            @include mobile{
+                flex-direction: column-reverse;
+                padding: 0;
             }
             &__left{
                 display: grid;
@@ -47,7 +52,21 @@
                 grid-gap: 30px;
                 justify-items: center;
                 align-items: center;
+                @include tablet{
+                    grid-template-columns: 350px;
+                }
+                @include mobile{
+                    grid-template-columns: 350px;
+                }
                 .text-wrap{
+                    @include tablet{
+                        @include flex(center, center);
+                        flex-direction: column;
+                    }
+                    @include mobile{
+                        @include flex(center, center);
+                        flex-direction: column;
+                    }
                     p{
                         color: $text-main-color;
                         font-size: 18px;
@@ -58,21 +77,41 @@
                         font-size: 16px;
                         font-weight: 300;
                         line-height: 1.6;
+                        @include tablet{
+                           text-align: center;
+                        }
+                        @include mobile{
+                            text-align: center;
+                        }
                     }
                 }
                 img{
                     width: 100%;
                     height: auto;
+                    @include tablet{
+                        width: 100px;
+                    }
+                    @include mobile{
+                        width: 100px;
+                    }
                 }
             }
             &__right{
                 @include tablet{
                     margin-bottom: 32px;
                 }
+                @include mobile{
+                    margin-bottom: 32px;
+                }
                 .login-form{
                     margin-left: 60px;
                     @include tablet{
                         margin-left: 0px;
+                        width: 330px;
+                    }
+                    @include mobile{
+                        margin-left: 0px;
+                        width: 320px;
                     }
                     width: 360px;
                     background-color: white;

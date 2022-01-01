@@ -29,6 +29,11 @@ $header-mobile-height: 50px;
 
 $box-shadow : rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-$mobile-width: 600px;
-$tablet-width: 1024px;
+$min-mobile-width: 320px;
+$max-mobile-width: 480px;
+$min-tablet-width: 481px;
+$max-tablet-width: 768px;
+$min-lg-width: 769px;
+$max-lg-width: 1024px;
+
     

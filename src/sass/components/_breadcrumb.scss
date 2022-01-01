@@ -3,6 +3,9 @@
     height: 50px;
     color: white;
     font-size: 14px;
+    @include mobile{
+        height: 100px;
+     }
     @include flex(center, center);
     .container{
         @include flex(center, space-between);
@@ -30,16 +33,30 @@
 
     &__right{
         @include flex(center, flex-start);
+        @include mobile{
+            flex-direction: column;
+         }
         
         &__text{
             word-spacing: 1px;
             font-weight: 300;
             span{
                 font-weight: 500;
+                &:last-child{
+                    @include mobile{
+                        display: block;
+                        text-align: center;
+                        margin-top: 3px;
+                    }
+                }
             }
         }
         &__edit{
             margin-left: 18px;
+            @include mobile{
+                margin-top: 4px;
+                margin-left: 0;
+            }
             cursor: pointer;
             border-bottom: 1px dashed #e89cae;
             span{

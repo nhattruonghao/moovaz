@@ -14,6 +14,9 @@
         left: 50%;
         transform: translateX(-50%) translateY(-55%);
         width: 350px;
+        @include mobile{
+            width: 275px;
+        }
         background-color: white;
         padding: 30px 40px;
         border-radius: 10px;

@@ -1,9 +1,5 @@
 
-@mixin tablet {
-    @media screen and (max-width: $tablet-width) {
-        @content;
-    };
-};
+
 
 @mixin flex($align-item, $justify-content) {
     display: flex;
@@ -11,9 +7,20 @@
     justify-content: $justify-content;
 }
 
+@mixin pc-low {
+    @media screen and (min-width: $min-lg-width) and (max-width: $max-lg-width) {
+        @content;
+    };
+};
+
+@mixin tablet {
+    @media screen and (min-width: $min-tablet-width)  and (max-width: $max-tablet-width) {
+        @content;
+    };
+};
 
 @mixin mobile {
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
         @content;
     };
 };

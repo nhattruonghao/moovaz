@@ -32,7 +32,7 @@ function LoginPage() {
         setIsShowPassword(!isShowPassword);
     }
     return (
-        <div className="main">
+        <div className="main" style={{backgroundColor: '#f4f4f4'}}>
             <div className="login-page">
                 <div className="login-page__wrap">
                     <div className="login-page__wrap__logo">
